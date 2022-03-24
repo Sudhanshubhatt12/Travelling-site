@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(190, 210, 228);
+}
+.mainpro {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainpro h3 {
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #021346;
+}
+.mainpro p {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: #8f1f06;
+}
+@media screen and (max-width: 550px) {
+  .mainpro p {
+    width: 80%;
+  }
+  .mainpro h3 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mainpro p {
+    width: 90%;
+  }
+  .mainpro h3 {
+    width: 90%;
+  }
+}

@@ -1,0 +1,111 @@
+.main-nav {
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(50px);
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.main-nav .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav .social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav .social ul li {
+  list-style: none;
+  padding-right: 1.5rem;
+}
+.main-nav .social ul li .iconss {
+  font-size: 1.3rem;
+}
+.main-nav .social ul li .iconss a {
+  color: #fcfaf9;
+}
+.main-nav .social ul li .iconss a:hover {
+  color: #df7d0e;
+}
+
+.navbar {
+  height: 3rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar li {
+  list-style: none;
+  padding-left: 2rem;
+}
+.navbar .navlink li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: #faf8f8;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar .navlink li:hover {
+  color: aquamarine;
+  transform: scale(1.07, 1.07);
+}
+.mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  .nav-links {
+    display: none !important;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    text-align: center;
+    display: block;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0rem;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .navbar .navlink li {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .navbar .navlink li a {
+    text-decoration: none;
+  }
+  .navlink {
+    color: white;
+    text-align: center;
+
+    width: 100%;
+    transition: all 0.5s ease-out;
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    top: 0rem;
+    outline: none;
+    border: none;
+    height: 3rem;
+  }
+  .main-nav .social {
+    display: none;
+  }
+}

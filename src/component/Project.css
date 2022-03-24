@@ -1,0 +1,79 @@
+.plates {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 1.5rem;
+}
+.plates:hover {
+  transform: scale(1.05, 1.05);
+}
+.plates .plate {
+  position: relative;
+  border: 1px solid rgb(34, 33, 33);
+  background-color: rgb(21, 21, 22);
+  mix-blend-mode: multiply;
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.plates .plate .strt img {
+  width: 19.8rem;
+  height: 15rem;
+  opacity: 0.6;
+  position: relative;
+}
+.plates .plate .strt .detail {
+  display: flex;
+  /* background: transparent; */
+  justify-content: left;
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  padding: 1rem;
+  bottom: 41%;
+  color: #ffffff;
+  flex-direction: column;
+}
+.plates .plate .strt .detail button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5rem;
+  color: white;
+  width: 4rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.plates .plate .aboutlocation {
+  position: relative;
+  height: 100%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.plates .plate .aboutlocation h1 {
+  text-align: center;
+  color: #25124a;
+  text-decoration: underline;
+}
+.plates .plate .aboutlocation .des {
+  color: #485017;
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: center;
+}
+@media screen and (max-width: 1080px) {
+  .plates {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .plates {
+    padding-left: 0rem;
+  }
+}
